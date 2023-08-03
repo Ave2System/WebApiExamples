@@ -32,7 +32,7 @@ The Api is documented in the [swagger-2.0 specification](https://www.ave-system.
     //var usedClient = sessionClient;
     ```
 
-5. Run Nuget restore
+5. Run `Nuget restore`
 6. Run the `Dotnet` project
 
 ---
