@@ -1,0 +1,23 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Compiled output
+dist/
+
+# TypeScript configuration backup files
+tsconfig.json.backup
+tsconfig.tsbuildinfo
+
+# IDE and editor files
+.vscode/
+.vs/
+.idea/
+*.code-workspace
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
