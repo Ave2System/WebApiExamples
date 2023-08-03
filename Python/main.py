@@ -12,7 +12,7 @@ base_url = "https://www.ave-system.com/api/"
 api_key = "YOUR_API_KEY"  # Replace with your API key
 headers = {"X-Api-Key": api_key}
 
-# 1b. Access WebApi using user SessionId (user and password)
+# 1b. Access WebApi using user SessionId (username and password)
 use_session = False  # Set to True to use SessionId instead of ApiKey
 
 username = "YOUR_USERNAME"  # Replace with your username
