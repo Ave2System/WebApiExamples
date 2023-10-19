@@ -1,12 +1,17 @@
 ﻿using System.Net;
 using Dotnet.NSwag.Client.Generated;
 
-async Task<PlacePage?> GetPlaces(HttpClient client, int start = 0, int limit = 10) {
+async Task<PlacePage?> GetPlaces(HttpClient client, int start = 0, int limit = 10)
+{
     var placesClient = new PlacesClient(client);
-    try {
+    try
+    {
         return await placesClient.GetPlacesAsync(start, limit);
-    } catch (ApiException e) {
-        if (e.StatusCode == (int)HttpStatusCode.Unauthorized) {
+    }
+    catch (ApiException e)
+    {
+        if (e.StatusCode == (int) HttpStatusCode.Unauthorized)
+        {
             await Console.Error.WriteLineAsync("Error: Unauthorized. Check your API key.");
             return null;
         }
@@ -26,6 +31,7 @@ var placesPage = await GetPlaces(client, 0, 20);
 if (placesPage == null) return;
 
 Console.WriteLine($"\nGot first {placesPage.Count} places");
-foreach (var place in placesPage.PageItems) {
+foreach (var place in placesPage.PageItems!)
+{
     Console.WriteLine($"PlaceID: {place.PlaceId}");
 }

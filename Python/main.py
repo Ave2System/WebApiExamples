@@ -6,7 +6,7 @@ import json
 
 import requests
 
-base_url = "https://www.ave-system.com/api/"
+base_url = "https://www.ave-system.com/api/v1"
 
 # 1a. Access WebApi using ApiKey
 api_key = "YOUR_API_KEY"  # Replace with your API key

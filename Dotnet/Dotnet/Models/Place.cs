@@ -1,6 +1,7 @@
 ﻿namespace Dotnet.Models;
 
-public class Place {
+public class Place
+{
     public int Id { get; set; }
     public string Eic { get; set; }
     public string CustomerName { get; set; }
